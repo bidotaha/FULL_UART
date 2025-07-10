@@ -1,0 +1,12 @@
+uart_if.sv
+uart_tx.sv
+uart_rx.sv
+uart_golden_model_tx.sv
+uart_golden_model_rx.sv
+uart_pkg.sv
+uart_tb.sv
+uart_monitor.sv
+uart_sva_tx.sv
+uart_sva_rx.sv
+uart_top.sv
+

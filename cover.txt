@@ -1,0 +1,383 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /\uart_top#TX /svatx
+=== Design Unit: work.uart_sva_tx
+=================================================================================
+
+Assertion Coverage:
+    Assertions                      13        13         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/\uart_top#TX /svatx/assert__STOP_Behaviour_p
+                     uart_sva_tx.sv(111)                0          1
+/\uart_top#TX /svatx/assert__PARITY_Behaviour_p
+                     uart_sva_tx.sv(107)                0          1
+/\uart_top#TX /svatx/assert__DATA_Behaviour3_p
+                     uart_sva_tx.sv(103)                0          1
+/\uart_top#TX /svatx/assert__DATA_Behaviour2_p
+                     uart_sva_tx.sv(100)                0          1
+/\uart_top#TX /svatx/assert__DATA_Behaviour1_p
+                     uart_sva_tx.sv(97)                 0          1
+/\uart_top#TX /svatx/assert__DATA_Behaviour_p
+                     uart_sva_tx.sv(94)                 0          1
+/\uart_top#TX /svatx/assert__START_Behaviour_p
+                     uart_sva_tx.sv(90)                 0          1
+/\uart_top#TX /svatx/assert__IDLE_Behaviour5_p
+                     uart_sva_tx.sv(86)                 0          1
+/\uart_top#TX /svatx/assert__IDLE_Behaviour4_p
+                     uart_sva_tx.sv(83)                 0          1
+/\uart_top#TX /svatx/assert__IDLE_Behaviour3_p
+                     uart_sva_tx.sv(80)                 0          1
+/\uart_top#TX /svatx/assert__IDLE_Behaviour2_p
+                     uart_sva_tx.sv(77)                 0          1
+/\uart_top#TX /svatx/assert__IDLE_Behaviour1_p
+                     uart_sva_tx.sv(74)                 0          1
+/\uart_top#TX /svatx/assert_reset
+                     uart_sva_tx.sv(5)                  0          1
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         2         2         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /\uart_top#TX /svatx
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File uart_sva_tx.sv
+------------------------------------IF Branch------------------------------------
+    4                                      86317     Count coming in to IF
+    4               1                        230             if(!u_if.reset)
+                                           86087     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+
+Directive Coverage:
+    Directives                      13        13         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/\uart_top#TX /svatx/cover__STOP_Behaviour_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(112)
+                                                                              7013 Covered   
+/\uart_top#TX /svatx/cover__PARITY_Behaviour_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(108)
+                                                                              1702 Covered   
+/\uart_top#TX /svatx/cover__DATA_Behaviour3_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(104)
+                                                                              5311 Covered   
+/\uart_top#TX /svatx/cover__DATA_Behaviour2_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(101)
+                                                                              1702 Covered   
+/\uart_top#TX /svatx/cover__DATA_Behaviour1_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(98)
+                                                                              49091 Covered   
+/\uart_top#TX /svatx/cover__DATA_Behaviour_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(95)
+                                                                              49091 Covered   
+/\uart_top#TX /svatx/cover__START_Behaviour_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(91)
+                                                                              7013 Covered   
+/\uart_top#TX /svatx/cover__IDLE_Behaviour5_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(87)
+                                                                              7013 Covered   
+/\uart_top#TX /svatx/cover__IDLE_Behaviour4_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(84)
+                                                                              3496 Covered   
+/\uart_top#TX /svatx/cover__IDLE_Behaviour3_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(81)
+                                                                              3517 Covered   
+/\uart_top#TX /svatx/cover__IDLE_Behaviour2_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(78)
+                                                                              65783 Covered   
+/\uart_top#TX /svatx/cover__IDLE_Behaviour1_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(75)
+                                                                              65783 Covered   
+/\uart_top#TX /svatx/cover_reset         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(6)
+                                                                              7471 Covered   
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       1         1         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /\uart_top#TX /svatx --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File uart_sva_tx.sv
+    1                                                module uart_sva_tx (uart_if.TX u_if);
+    2                                                    
+    3               1                      86317         always_comb begin
+
+
+=================================================================================
+=== Instance: /\uart_top#TX 
+=== Design Unit: work.uart_tx
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        10        10         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /\uart_top#TX 
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File uart_tx.sv
+------------------------------------IF Branch------------------------------------
+    8                                     149649     Count coming in to IF
+    8               1                       4792         if (!u_if.reset) begin
+    13              1                     144857         end else begin
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    19                                     73025     Count coming in to IF
+    19              1                       7013                     if (u_if.DATA_VALID) begin
+                                           66012     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    21                                      7013     Count coming in to IF
+    21              1                       3517                         PARITY_bit <= (u_if.PAR_TYP == 0) ? ~^u_if.P_DATA : ^u_if.P_DATA;
+    21              2                       3496                         PARITY_bit <= (u_if.PAR_TYP == 0) ? ~^u_if.P_DATA : ^u_if.P_DATA;
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    34                                     56104     Count coming in to IF
+    34              1                       7013                       if (counter == 7)
+                                           49091     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    35                                      7013     Count coming in to IF
+    35              1                       1702                       state <= (u_if.PAR_EN) ? u_if.PARITY : u_if.STOP;
+    35              2                       5311                       state <= (u_if.PAR_EN) ? u_if.PARITY : u_if.STOP;
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       1         1         0   100.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /\uart_top#TX  --
+
+  File uart_tx.sv
+----------------Focused Condition View-------------------
+Line       34 Item    1  (counter == 7)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+  (counter == 7)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (counter == 7)_0      -                             
+  Row   2:          1  (counter == 7)_1      -                             
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      3         3         0   100.00%
+
+================================Expression Details================================
+
+Expression Coverage for instance /\uart_top#TX  --
+
+  File uart_tx.sv
+-----------Focused Expression View (Bimodal)------------
+Line       21 Item    1  (~u_if.PAR_TYP? ~^u_if.P_DATA: ^u_if.P_DATA)
+Expression totals: 3 of 3 input terms covered = 100.00%
+
+       Input Term   Covered  Reason for no coverage                  Hint
+      -----------  --------  --------------------------------------  --------------
+     u_if.PAR_TYP         Y
+    ~^u_if.P_DATA         Y
+     ^u_if.P_DATA         Y
+
+    Rows:   Hits(->0)   Hits(->1)  FEC Target            Non-masking condition(s)           
+
+---------  ----------  ----------  --------------------  -------------------------          
+ Row   1:           0           1  u_if.PAR_TYP_0        -                                  
+ Row   2:           1           0  u_if.PAR_TYP_1        -                                  
+ Row   3:           1           0  ~^u_if.P_DATA_0       ~u_if.PAR_TYP                      
+ Row   4:           0           1  ~^u_if.P_DATA_1       ~u_if.PAR_TYP                      
+ Row   5:           1           0  ^u_if.P_DATA_0        u_if.PAR_TYP                       
+ Row   6:           0           1  ^u_if.P_DATA_1        u_if.PAR_TYP                       
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      22        22         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /\uart_top#TX  --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File uart_tx.sv
+    1                                                module uart_tx (uart_if.TX u_if);
+    2                                                
+    3                                                    reg [2:0] state = u_if.IDLE;
+    4                                                    reg [3:0] counter = 0;
+    5                                                    reg [7:0] DATA_reg;
+    6                                                    reg  PARITY_bit;
+    7               1                     149649     always @(posedge u_if.clk or negedge u_if.reset) begin
+    8                                                    if (!u_if.reset) begin
+    9               1                       4792             state <= u_if.IDLE;
+    10              1                       4792             u_if.TX_OUT <= 1'b1;
+    11              1                       4792             u_if.Busy <= 1'b0;
+    12              1                       4792             counter <= 0;
+    13                                                   end else begin
+    14                                                       case (state)
+    15                                                         u_if.IDLE: begin
+    16              1                      73025                     u_if.TX_OUT <= 1'b1;
+    17              1                      73025                     u_if.Busy <= 1'b0;
+    18              1                      73025                     counter <= 0;
+    19                                                               if (u_if.DATA_VALID) begin
+    20              1                       7013                         DATA_reg <= u_if.P_DATA;
+    21              1                       7013                         PARITY_bit <= (u_if.PAR_TYP == 0) ? ~^u_if.P_DATA : ^u_if.P_DATA;
+    22              1                       7013                         state <= u_if.START;
+    23              1                       7013                         u_if.Busy <= 1'b1;
+    24                                                               end
+    25                                                         end
+    26                                                         u_if.START: begin
+    27              1                       7013                     u_if.TX_OUT <= 1'b0;
+    28              1                       7013                     state <= u_if.DATA;
+    29              1                       7013                     counter <= 0;
+    30                                                         end
+    31                                                         u_if.DATA: begin
+    32              1                      56104                       u_if.TX_OUT <= DATA_reg[counter];
+    33              1                      56104                       counter <= counter + 1;
+    34                                                                 if (counter == 7)
+    35              1                       7013                       state <= (u_if.PAR_EN) ? u_if.PARITY : u_if.STOP;
+    36                                                         end
+    37                                                         u_if.PARITY: begin
+    38              1                       1702                         u_if.TX_OUT <= PARITY_bit;
+    39              1                       1702                         state <= u_if.STOP;
+    40                                                         end
+    41                                                         u_if.STOP: begin
+    42              1                       7013                       u_if.TX_OUT <= 1'b1;
+    43              1                       7013                       state <= u_if.IDLE;
+
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         32        32         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /\uart_top#TX  --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                     DATA_reg[7-0]           1           1      100.00 
+                                        PARITY_bit           1           1      100.00 
+                                      counter[3-0]           1           1      100.00 
+                                        state[2-0]           1           1      100.00 
+
+Total Node Count     =         16 
+Toggled Node Count   =         16 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (32 of 32 bins)
+
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/\uart_top#TX /svatx/cover__STOP_Behaviour_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(112)
+                                                                              7013 Covered   
+/\uart_top#TX /svatx/cover__PARITY_Behaviour_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(108)
+                                                                              1702 Covered   
+/\uart_top#TX /svatx/cover__DATA_Behaviour3_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(104)
+                                                                              5311 Covered   
+/\uart_top#TX /svatx/cover__DATA_Behaviour2_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(101)
+                                                                              1702 Covered   
+/\uart_top#TX /svatx/cover__DATA_Behaviour1_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(98)
+                                                                              49091 Covered   
+/\uart_top#TX /svatx/cover__DATA_Behaviour_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(95)
+                                                                              49091 Covered   
+/\uart_top#TX /svatx/cover__START_Behaviour_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(91)
+                                                                              7013 Covered   
+/\uart_top#TX /svatx/cover__IDLE_Behaviour5_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(87)
+                                                                              7013 Covered   
+/\uart_top#TX /svatx/cover__IDLE_Behaviour4_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(84)
+                                                                              3496 Covered   
+/\uart_top#TX /svatx/cover__IDLE_Behaviour3_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(81)
+                                                                              3517 Covered   
+/\uart_top#TX /svatx/cover__IDLE_Behaviour2_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(78)
+                                                                              65783 Covered   
+/\uart_top#TX /svatx/cover__IDLE_Behaviour1_p 
+                                         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(75)
+                                                                              65783 Covered   
+/\uart_top#TX /svatx/cover_reset         uart_sva_tx Verilog  SVA  uart_sva_tx.sv(6)
+                                                                              7471 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 13
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/\uart_top#TX /svatx/assert__STOP_Behaviour_p
+                     uart_sva_tx.sv(111)                0          1
+/\uart_top#TX /svatx/assert__PARITY_Behaviour_p
+                     uart_sva_tx.sv(107)                0          1
+/\uart_top#TX /svatx/assert__DATA_Behaviour3_p
+                     uart_sva_tx.sv(103)                0          1
+/\uart_top#TX /svatx/assert__DATA_Behaviour2_p
+                     uart_sva_tx.sv(100)                0          1
+/\uart_top#TX /svatx/assert__DATA_Behaviour1_p
+                     uart_sva_tx.sv(97)                 0          1
+/\uart_top#TX /svatx/assert__DATA_Behaviour_p
+                     uart_sva_tx.sv(94)                 0          1
+/\uart_top#TX /svatx/assert__START_Behaviour_p
+                     uart_sva_tx.sv(90)                 0          1
+/\uart_top#TX /svatx/assert__IDLE_Behaviour5_p
+                     uart_sva_tx.sv(86)                 0          1
+/\uart_top#TX /svatx/assert__IDLE_Behaviour4_p
+                     uart_sva_tx.sv(83)                 0          1
+/\uart_top#TX /svatx/assert__IDLE_Behaviour3_p
+                     uart_sva_tx.sv(80)                 0          1
+/\uart_top#TX /svatx/assert__IDLE_Behaviour2_p
+                     uart_sva_tx.sv(77)                 0          1
+/\uart_top#TX /svatx/assert__IDLE_Behaviour1_p
+                     uart_sva_tx.sv(74)                 0          1
+/\uart_top#TX /svatx/assert_reset
+                     uart_sva_tx.sv(5)                  0          1
+
+Total Coverage By Instance (filtered view): 100.00%
+
